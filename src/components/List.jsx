@@ -3,7 +3,7 @@ function List() {
 
   return (
     <main>
-      <ul>
+      <ul className="compact-list">
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
