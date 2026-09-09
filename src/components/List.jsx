@@ -1,13 +1,23 @@
+import { useState } from 'react';
+import ToggleSwitch from './ToggleSwitch';
+
 function List() {
-  const items = ['Item 1', 'Item 2', 'Item 3'];
+  const [listVisible, setListVisible] = useState(true);
+  const items = ['Caracas', 'Helios', 'Midde'];
 
   return (
     <main>
-      <ul className="compact-list">
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <h2>Min Lista</h2>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <ToggleSwitch on={listVisible} setOn={setListVisible} />
+        </div>
+      {listVisible && (
+        <ul className="compact-list">
+          {items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      )}
     </main>
   );
 }

@@ -4,8 +4,10 @@ Kort beskrivning av vad projektet är och vad det gör.
 
 ## Teknik
 - React (Vite)
+- Javascript
 
 ## Komma igång
+Klona från... 
 ```bash
 npm install
 npm run dev

@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2026 Mitt projekt. Alla rättigheter förbehållna.</p>
+      <p>&copy; 2026 Sandras lilla projekt. Alla rättigheter förbehållna.</p>
     </footer>
   );
 }
